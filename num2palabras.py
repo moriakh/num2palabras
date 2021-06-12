@@ -46,7 +46,7 @@ def num2palabras(num):
             return 'un millón ' + num2palabras(num%1000000)
         else:
             return num2palabras(num//1000000) + ' millones ' + num2palabras(num%1000000)
-    elif len(str(num))<=12:
+    elif len(str(num))<=15:
         if num == 1000000000:
             return 'un billón'
         elif num <= 1999999999:
@@ -56,4 +56,4 @@ def num2palabras(num):
     else:
         return 'No implementado'
 
-print(num2palabras(111911112240))
+print(num2palabras(999999999999999))
